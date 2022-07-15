@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html  >
+<head>
+
+  <meta charset="UTF-8">
+  <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+  <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+	<script src="https://www.google.com/recaptcha/api.js"></script>
+
+	<script>
+
+ function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
+
+</script>
+  <meta name="generator" content="Mobirise v5.3.5, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/favicon-blanco-03-127x127.png" type="image/x-icon">
+  <meta name="description" content="El zafiro, en la técnica FUE es una herramienta fundamental que perfecciona la naturalidad del resultado. Zafiro es la máxima tecnología en las manos adecuadas. En medical hair somos esencialmente medicina aplicada con la mas alta tecnología.">
+  
+  
+  <title>FUE Zafiro - Perfección natural - Medical Hair</title>
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/formstyler/jquery.formstyler.css">
+  <link rel="stylesheet" href="assets/formstyler/jquery.formstyler.theme.css">
+  <link rel="stylesheet" href="assets/socicon/css/styles.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/recaptcha.css">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"></noscript>
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+	  
+	  
+  
+	<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '938507910423245');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=938507910423245&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+	
+	
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TM4K3V7');</script>
+<!-- End Google Tag Manager -->
+	  
+	  <!-- Event snippet for VM-formulario completado conversion page -->
+<script>
+  gtag('event', 'conversion', {'send_to': 'AW-855336089/oiDjCJvKreMBEJnJ7ZcD'});
+</script>
+
+
+<!-- <script>
+    $("form").each(function() {
+        $(this).find(':input[type="submit"]').prop('disabled', true);
+    });
+    function correctCaptcha() {
+        $("form").each(function() {
+            $(this).find(':input[type="submit"]').prop('disabled', false);
+        });
+    }
+    </script> -->  
+	
+  <script>
+
+
+
+  function getParam(p) {
+
+    var match = RegExp('[?&]' + p + '=([^&]*)').exec(window.location.search);
+
+    return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+
+  }
+
+
+
+  function getExpiryRecord(value) {
+
+    var expiryPeriod = 90 * 24 * 60 * 60 * 1000; // caducidad de 90 días, en milisegundos
+
+
+
+    var expiryDate = new Date().getTime() + expiryPeriod;
+
+    return {
+
+      value: value,
+
+      expiryDate: expiryDate
+
+    };
+
+  }
+
+
+
+  function addGclid() {
+
+    var gclidParam = getParam('gclid');
+
+    var gclidFormFields = ['00N0V0000098SiG']; // aquí se especifican todas las formas posibles de ID de campo de formulario
+
+    var gclidRecord = null;
+
+    var currGclidFormField;
+
+
+
+    var gclsrcParam = getParam('gclsrc');
+
+    var isGclsrcValid = !gclsrcParam || gclsrcParam.indexOf('aw') !== -1;
+
+
+
+    gclidFormFields.forEach(function (field) {
+
+      if (document.getElementById(field)) {
+
+        currGclidFormField = document.getElementById(field);
+
+      }
+
+    });
+
+
+
+    if (gclidParam && isGclsrcValid) {
+
+      gclidRecord = getExpiryRecord(gclidParam);
+
+      localStorage.setItem('gclid', JSON.stringify(gclidRecord));
+
+    }
+
+
+
+    var gclid = gclidRecord || JSON.parse(localStorage.getItem('gclid'));
+
+    var isGclidValid = gclid && new Date().getTime() < gclid.expiryDate;
+
+
+
+    if (currGclidFormField && isGclidValid) {
+
+      currGclidFormField.value = gclid.value;
+
+    }
+
+  }
+
+
+
+  window.addEventListener('load', addGclid);
+
+
+
+   </script>
+  <!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '480095607255746');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=480095607255746&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code --><!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '480095607255746');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=480095607255746&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+	  
+	  <!-- Google Tag Manager - PULSAR  - NO TOCAR -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TZ2LNDM');</script>
+<!-- End Google Tag Manager PULSAR   - NO TOCAR -->
+ 
+</head>
+<body>
+	
+	<!-- Global site tag (gtag.js) - Google Ads: 855336089 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-855336089"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-855336089');
+</script>
+	
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TM4K3V7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  
+  <section class="menu menu3 cid-sQt6Enl8WS" once="menu" id="menu3-2">
+    
+    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+        <div class="container">
+            <div class="navbar-brand">
+                <span class="navbar-logo">
+                    <a href="http://www.medicalhair.com.ar">
+                        <img src="assets/images/logomedicalhairblanco-1.png" alt="Mobirise" style="height: 3rem;">
+                    </a>
+                </span>
+                
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-white text-primary display-4" href="index.html#content15-7">FUE Zafiro</a>
+                    </li></ul>
+                <div class="icons-menu">
+                    <a class="iconfont-wrapper" href="https://www.facebook.com/medicalhair" target="_blank">
+                        <span class="p-2 mbr-iconfont socicon-facebook socicon"></span>
+                    </a>
+                    <a class="iconfont-wrapper" href="http://instagram.com/medicalhairargentina" target="_blank">
+                        <span class="p-2 mbr-iconfont socicon-instagram socicon"></span>
+                    </a>
+                    <a class="iconfont-wrapper" href="https://www.youtube.com/user/MedicalHair2006" target="_blank">
+                        <span class="p-2 mbr-iconfont socicon-youtube socicon"></span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </nav>
+</section>
+
+<section class="content4 cid-sQtmPduK1J" id="content4-g">
+    
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="title col-md-12 col-lg-10">
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</section>
+<section class="extForm cid-sQte1OQQjp" id="extForm15-5">        
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 mx-auto py-5 mbr-form order-2" data-form-type="formoid">
+                <h2 class="mbr-section-title align-left pb-4 mbr-semibold mbr-white mbr-fonts-style display-2">Recuperá tu pelo</h2>
+                <p class="mbr-text mbr-black align-left pb-4 mbr-regular mbr-light mbr-fonts-style display-7">Somos líderes en recuperación capilar.<br>Dejanos tus datos y nos comunicamos.</p>
+
+                <!---Formbuilder Form--->
+				<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" class="mbr-form form-with-styler"  method="POST">
+
+                <div class="form-row">
+								<input type=hidden name='captcha_settings' value='{"keyname":"MedicalHair","fallback":"true","orgId":"00Dd0000000bbpz","ts":""}'>
+				<input type=hidden name="oid" value="00Dd0000000bbpz">
+				<input type=hidden name="retURL" value="https://www.medicalhair.com.ar/landingzafiro/gracias.html">
+				</div>
+                    <div class="dragArea form-row">
+                        <div class="col-lg-12 form-group" data-for="first-name">
+							 <input type="text" id="first_name"  name="first_name" placeholder="Nombre" data-form-field="first-name" class="form-control display-7" value="">
+                        </div>
+                        <div class="col-lg-12 form-group" data-for="last-name">
+                            <input type="text" name="last_name" placeholder="Apellido" data-form-field="last-name" class="form-control display-7" value="" id="last_name">
+                        </div>
+                        
+                        <div data-for="email" class="col-lg-12 form-group" style="">
+                            <input type="email" name="email" placeholder="Mail" data-form-field="email" class="form-control display-7" value="" id="email">
+                        </div>
+                        <div data-for="phone" class="col-lg-12 form-group">
+                            <input type="tel" name="mobile" placeholder="Teléfono" data-form-field="phone" class="form-control display-7" pattern="*" value="" id="mobile">
+                        </div>
+                        <div data-for="message" class="col-lg-12 form-group">
+                            <textarea name="00Nd00000045x6i" placeholder="Mensaje" data-form-field="message" class="form-control display-7" value="" id="00Nd00000045x6i"></textarea>
+                        </div>
+						
+					
+						<!-- ADS Tag en Value -->						
+						<input type=hidden id="00N0V0000098SiG" maxlength="255" name="00N0V0000098SiG" size="20" type="text" value="" /><br>
+						<input type=hidden id="country" maxlength="40" name="country" size="20" type="text" value="Argentina"/><br>
+
+						<select style="visibility:hidden !important;" id="Campaign_ID" value="7018X000001lf9b" name="Campaign_ID">
+						<!-- <option style="visibility:hidden;" value="7018X000001lf9b">Zafiro 2022 Marzo</option> -->
+						<!-- <option style="visibility:hidden;" value="7018X000001lf9c">Zafiro 2022 Abril</option> -->
+						<!-- <option style="visibility:hidden;" value="7018X000001lf9g">Zafiro 2022 Mayo</option> -->
+						<!-- <option style="visibility:hidden;" value="7018X000001lf9q">Zafiro 2022 Julio</option> -->
+						<!-- <option style="visibility:hidden;" value="7018X000001lf9v">Zafiro 2022 Agosto</option> -->
+						<!-- <option style="visibility:hidden;" value="7018X000001lfA0">Zafiro 2022 Septiembre</option> -->
+						<!-- <option style="visibility:hidden;" value="7018X000001lfA1">Zafiro 2022 Octubre</option> -->
+						<!-- <option style="visibility:hidden;" value="7018X000001lf9w">Zafiro 2022 noviembre</option> -->
+						<!-- <option style="visibility:hidden;" value="7018X000001lfA2">Zafiro 2022 Diciembre</option> -->
+						<!-- <option style="visibility:hidden;" value="7018X000001lf9l">Zafiro 2022 Junio</option> -->
+						<!-- <option style="visibility:hidden;" value="7018X000001lf9W">Zafiro 2022 Enero</option> -->
+						<!-- <option style="visibility:hidden;" 	value="7018X000001lf9X">Zafiro 2022 Febrero</option> -->
+						</select><br>
+
+
+
+						<select style="visibility:hidden;" id="00Nd0000008Esp2" name="00Nd0000008Esp2" value="Web" title="¿Cómo nos conoció?">
+						</select>
+
+						<select  style="visibility:hidden;" id="00Nd0000008EspC" name="00Nd0000008EspC" value="Landing Zafiro" title="Tipo de Origen">
+						</select>
+
+						<div class="g-recaptcha" data-sitekey="6LdsD9oUAAAAAAZPG8_B69rixLuYCPHbt5rtG6ff"></div><br>
+                        <div class="col-lg-12 mbr-section-btn"><button type="submit" name="submit" class="btn btn-form btn-primary display-7"><span class="mobi-mbri mobi-mbri-right mbr-iconfont mbr-iconfont-btn"></span>ESCRIBINOS</button></div>
+                    </div>
+                </form>
+                <!---Formbuilder Form--->
+            </div>
+
+            <div class="col-lg-6 img-col">
+                <img src="assets/images/captura-de-pantalla-2021-12-02-a-las-17.47.43-582x671.png" alt="Mobirise">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="content15 cid-sQthPRX0WZ mbr-parallax-background" id="content15-7">
+
+    
+
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="card col-md-12 col-lg-10">
+                <div class="card-wrapper">
+                    <div class="card-box align-left">
+                        <h4 class="card-title mbr-fonts-style mbr-white mb-3 display-5">
+                            LA PERFECCIÓN NATURAL EXISTE</h4>
+                        <p class="mbr-text mbr-fonts-style display-7"><strong>&nbsp;Técnica FUE ZAFIRO, la mayor tecnología, en manos de profesionales.<br></strong><br>Cuando la calvicie es androgenética o es un tipo de alopecia que hace desaparecer las unidades foliculares sin posibilidad de que genere un nuevo cabello (como puede ser una alopecia cicatricial), el único tratamiento que hará recuperar el pelo perdido es el implante capilar.<br><br>El zafiro, en la técnica FUE es una herramienta fundamental  que perfecciona la naturalidad del resultado. Zafiro es la máxima tecnología en las manos adecuadas. En medical hair somos esencialmente medicina aplicada con la mas alta tecnología.<br><br>Que el pelo quede naturalmente perfecto es nuestro mayor desafío para todos nuestros pacientes.</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="gallery3 cid-sQxpgGqtpi" id="gallery3-j">
+    
+    
+    <div class="container-fluid">
+        
+        <div class="row mt-4">
+            <div class="item features-image сol-12 col-md-6 col-lg-3">
+                <div class="item-wrapper">
+                    <div class="item-img">
+                        <img src="assets/images/iconosc-7-318x133.png" alt="">
+                    </div>
+                    <div class="item-content">
+                        
+                        <h6 class="item-subtitle mbr-fonts-style mt-1 display-7">
+                            <em>Naturalmente perfecto</em></h6>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="item features-image сol-12 col-md-6 col-lg-3">
+                <div class="item-wrapper">
+                    <div class="item-img">
+                        <img src="assets/images/iconosc-8-318x133.png" alt="">
+                    </div>
+                    <div class="item-content">
+                        
+                        <h6 class="item-subtitle mbr-fonts-style mt-1 display-7">
+                            <em>Disminuye los tiempos </em><br><em>post operatorios</em></h6>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="item features-image сol-12 col-md-6 col-lg-3">
+                <div class="item-wrapper">
+                    <div class="item-img">
+                        <img src="assets/images/iconosc-9-318x133.png" alt="">
+                    </div>
+                    <div class="item-content">
+                        
+                        <h6 class="item-subtitle mbr-fonts-style mt-1 display-7">
+                            <em>Menos invasivo </em><br><em>p</em><em>or su precisión</em></h6>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="item features-image сol-12 col-md-6 col-lg-3">
+                <div class="item-wrapper">
+                    <div class="item-img">
+                        <img src="assets/images/iconosc-10-318x133.png" alt="" title="">
+                    </div>
+                    <div class="item-content">
+                        
+                        <h6 class="item-subtitle mbr-fonts-style mt-1 display-7">
+                            <em>Mayor densidad</em></h6>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="video5 cid-sQtjrTQkVw" id="video5-9">
+    
+    
+    <div class="container">
+        <div class="title-wrapper mb-5">
+            
+        </div>
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-6 video-block">
+                <div class="video-wrapper"><iframe class="mbr-embedded-video" src="https://www.youtube.com/embed/firZmNP9sto"
+					rel=0&amp;amp;showinfo=0&amp;autoplay=0&amp;loop=0" width="1280" height="720" frameborder="0" allowfullscreen></iframe></div>
+                
+            </div>
+            <div class="col-12 col-lg">
+                <div class="text-wrapper">
+                    <h3 class="mbr-section-subtitle mbr-fonts-style mb-3 display-5">
+                        Zafiro, en las mejores manos.</h3>
+                    <p class="mbr-text mbr-fonts-style display-7">
+                        La FUE realizada con zafiro no es una técnica en sí, sino que se trata de una innovación que constituye un nuevo avance dentro del método FUE.<br><br>La técnica FUE ZAFIRO nos da perfección.<br></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="gallery3 cid-sQxAOkU5Y0" id="gallery3-o">
+    
+    
+    <div class="container-fluid">
+        <div class="mbr-section-head">
+            <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">TESTIMONIOS</h4>
+            
+        </div>
+        <div class="row mt-4">
+            <div class="item features-image сol-12 col-md-6 col-lg-4">
+                <div class="item-wrapper">
+                    <div class="item-img">
+                        <a href="https://youtu.be/iOrQplMqV64"><img src="assets/images/1633-convertido-3-434x289.jpg" alt=""></a>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            <div class="item features-image сol-12 col-md-6 col-lg-4">
+                <div class="item-wrapper">
+                    <div class="item-img">
+                        <a href="https://youtu.be/onQetuOZHic"><img src="assets/images/1633-convertido-2-529x352.jpg" alt=""></a>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            <div class="item features-image сol-12 col-md-6 col-lg-4">
+                <div class="item-wrapper">
+                    <div class="item-img">
+                        <a href="https://youtu.be/2v7UE5mV5ac"><img src="assets/images/1633-convertido-4-434x289.jpg" alt=""></a>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<section class="video4 cid-sQwZJS7LXP" id="video4-h">
+    
+    
+    <div class="container">
+        <div class="title-wrapper mb-5">
+            
+        </div>
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-6 video-block">
+                <div class="video-wrapper"><iframe class="mbr-embedded-video" src="https://www.youtube.com/embed/MhqF-PJrMh8"
+					rel=0&amp;amp;showinfo=0&amp;autoplay=0&amp;loop=0" width="1280" height="720" frameborder="0" allowfullscreen></iframe></div>
+                
+            </div>
+            <div class="col-12 col-lg">
+                <div class="text-wrapper">
+                    <h5 class="mbr-section-subtitle mbr-fonts-style mb-3 display-5">
+                        Técnica FUE Zafiro, la perfección natural.</h5>
+                    <p class="mbr-text mbr-fonts-style display-7">
+                       La técnica FUE Zafiro, que utiliza Medical Hair para los microtrasplantes capilares,  permite que la primera línea de tu pelo, quede naturalmente perfecta. Logrando ese resultado positivo que estás buscando.<br>
+
+Medical Hair cuenta con toda la experiencia en el uso de esta técnica, tratada siempre con médicos especialistas en medicina capilar</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="footer7 cid-sQtmrgsL4G" once="footers" id="footer7-f">
+
+    
+
+    
+
+    <div class="container">
+        <div class="media-container-row align-center mbr-white">
+            <div class="col-12">
+                <p class="mbr-text mb-0 mbr-fonts-style display-4">
+                    © Copyright 2021 Medical Hair - Dale! Agencia de publicidad</p>
+            </div>
+        </div>
+    </div>
+</section><section style="display: none !important; background-color: #fff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; color:#aaa; font-size:12px; padding: 0; align-items: center; display: flex;"><a href="https://mobirise.site/b" style="flex: 1 1; height: 3rem; padding-left: 1rem;"></a><p style="flex: 0 0 auto; margin:0; padding-right:1rem;">The <a href="https://mobirise.site/e" style="color:#aaa;">page</a> was started with Mobirise</p></section><script src="assets/web/assets/jquery/jquery.min.js"></script>  <script src="assets/popper/popper.min.js"></script>  <script src="assets/tether/tether.min.js"></script>  <script src="assets/bootstrap/js/bootstrap.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/dropdown/js/nav-dropdown.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>  <script src="assets/formstyler/jquery.formstyler.js"></script>  <script src="assets/formstyler/jquery.formstyler.min.js"></script>  <script src="assets/parallax/jarallax.min.js"></script>  <script src="assets/playervimeo/vimeo_player.js"></script>  <script src="assets/theme/js/script.js"></script>  <script src="assets/formoid.min.js"></script>  
+  
+  
+</body>
+</html>
